@@ -1,0 +1,170 @@
+
+* {
+	
+	margin: 0;
+	padding: 0;
+	
+}
+
+header {
+	
+	background-color: brown;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	transition: height 1s, line-height 1s, font-size 1s;
+	font-size: 24px;
+	margin-bottom: 5vh;
+	
+}
+
+header:hover {
+	
+	height: 100px;
+	line-height: 100px;
+	font-size: 36px;
+	
+}
+
+section {
+	
+	display: grid;
+	grid-template: 
+		"a a b b" 27vh 
+		"c c d d" 27vh 
+		"e e d d" 27vh;
+	
+}
+
+article {
+	
+	background-color: lightpink;
+	height: 25vh;
+	width: 49vw;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid black;
+	position: relative;
+}
+
+article:nth-child(1) {
+	
+	grid-area: a;
+}
+
+article:nth-child(2) {
+	
+	grid-area: b;
+}
+
+article:nth-child(3) {
+	
+	grid-area: c;
+}
+
+article:nth-child(4) {
+	
+	grid-area: d;
+	height: 52vh;
+}
+
+article:nth-child(5) {
+	
+	grid-area: e;
+}
+
+
+article p {
+	
+	text-align: center;
+	margin-top: 20px;
+	font-size: 24px;
+	color: black;
+	text-decoration: underline;
+	
+}
+
+@keyframes cubespin {
+	
+	0% { transform: rotate(0); background-color: white }
+	10 { background-color: lightred; }
+	20% { background-color: red; }
+	30% { background-color: orange; }
+	40% { background-color: yellow; }
+	50% { background-color: green; }
+	60% { background-color: lightblue; }
+	70% { background-color: blue; }
+	80% { background-color: purple; }
+	90% { background-color: black; }
+	100% { transform: rotate(360deg); background: white; }
+	
+}
+
+article:nth-child(1) div {
+	
+	width: 75px;
+	height: 75px;
+	background-color: grey;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	animation: cubespin 4s linear infinite;
+	border: 2px solid black;
+}
+
+@keyframes ball {
+	
+    0%{
+        top: 50px;
+        right: 625px;
+		opacity: 100%;
+    }
+    10% {
+        top: 105px;
+        right: 475px;
+    }
+    30% {
+        top: 70px;
+        right: 325px;
+    }
+    55% {
+        top: 105px;
+        right: 200px;
+    }
+    90% {
+        top: 90px;
+        right: 110px;
+    }
+	100% {
+        top: 50px;
+        right: 625px;
+		opacity: 0;
+    }
+}
+
+article:nth-child(2) div:nth-child(2) {
+	
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	position: absolute;
+	border-radius: 100%;
+	border: 2px solid black;
+	top: 50px;
+	right: 625px;
+	animation: ball 3s forwards linear infinite;
+}
+
+article:nth-child(2) div:nth-child(3) {
+	
+	height: 10px;
+	width: 700px;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	border: 2px solid white;
+}
