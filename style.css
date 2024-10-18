@@ -276,7 +276,7 @@ article:nth-child(4) div:nth-child(3) {
 article:nth-child(4) div:nth-child(4) {
 	
 	--size: 7.5px;
-	background-color: brown;
+	background-color: goldenrod;
 	animation: venus 3s linear infinite;
 	
 }
@@ -300,7 +300,7 @@ article:nth-child(4) div:nth-child(6) {
 article:nth-child(4) div:nth-child(7) {
 	
 	--size: 17px;
-	background-color: orange;
+	background-color: darkorange;
 	animation: jupiter 9s linear infinite;
 	
 }
@@ -308,7 +308,7 @@ article:nth-child(4) div:nth-child(7) {
 article:nth-child(4) div:nth-child(8) {
 	
 	--size: 15px;
-	background-color: beige;
+	background-color: wheat;
 	animation: saturn 11s linear infinite;
 	
 }
